@@ -87,3 +87,7 @@ ls YourProject/.claude/skills/recipe-generator/SKILL.md
 **风格C（默认）生成效果：**
 
 ![Example Result](./assets/demo-result.png)
+
+## 🙏 致谢
+
+感谢 [cclank](https://github.com/cclank/recipe-generator/) 提供的灵感和底层工作。本项目在其基础上增加了自动生成菜谱海报图片的能力。
