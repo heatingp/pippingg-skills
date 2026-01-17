@@ -1,6 +1,6 @@
 # pippingg-skills
 
-Claude Code skills for deep thinking and content creation.
+Claude Code skills for deep thinking, content creation, and recipe generation.
 
 [中文版](README.zh.md)
 
@@ -14,6 +14,7 @@ Claude Code skills for deep thinking and content creation.
 **Method 2: Direct Install**
 ```
 /plugin install thinking-skills@pippingg-skills
+/plugin install content-skills@pippingg-skills
 ```
 
 ## Available Skills
@@ -83,6 +84,45 @@ After using any skill and providing feedback during the conversation:
 ```
 /skill-iterator
 ```
+
+---
+
+### 3. recipe-generator
+
+Generates professional-grade recipes with detailed instructions and image prompts.
+
+**What it does:**
+
+- Searches authoritative sources (Michelin Guide, 舌尖上的中国, professional chefs)
+- Generates precise recipes with exact measurements and timing
+- Creates image prompts for recipe posters in multiple styles
+- Automatically generates recipe poster images using Gemini
+
+**Key features:**
+
+- **Authoritative sources**: Pulls from Michelin, 舌尖上的中国, top-rated recipes
+- **Precise measurements**: No vague "to taste" — exact grams and milliliters
+- **Professional tips**: Chef techniques that make a real difference
+- **Image generation**: Creates beautiful recipe posters automatically
+
+**Style options:**
+
+| Style | Description |
+| ----- | ----------- |
+| C (default) | Modern realistic, educational |
+| A | Traditional poster, high visual impact |
+| B | Literati scroll, elegant and refined |
+
+**Usage:**
+
+```
+/recipe-generator 清蒸鱼
+/recipe-generator 红烧肉 plan A风格
+```
+
+**Dependencies:**
+
+- `baoyu-gemini-web` — for generating recipe poster images
 
 ## Why These Skills?
 

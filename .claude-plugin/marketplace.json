@@ -5,8 +5,8 @@
     "email": "heatingp@users.noreply.github.com"
   },
   "metadata": {
-    "description": "Socratic thinking skills for deep analysis and article writing",
-    "version": "1.0.0"
+    "description": "Socratic thinking skills for deep analysis, article writing, and recipe generation",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -17,6 +17,15 @@
       "skills": [
         "./skills/socratic-thinking",
         "./skills/skill-iterator"
+      ]
+    },
+    {
+      "name": "content-skills",
+      "description": "Content creation tools for recipes and more",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/recipe-generator"
       ]
     }
   ]

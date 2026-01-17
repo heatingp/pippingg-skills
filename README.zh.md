@@ -1,6 +1,6 @@
 # pippingg-skills
 
-帮助深度思考和内容创作的 Claude Code 技能包。
+帮助深度思考、内容创作和菜谱生成的 Claude Code 技能包。
 
 [English](README.md)
 
@@ -16,6 +16,7 @@
 
 ```bash
 /plugin install thinking-skills@pippingg-skills
+/plugin install content-skills@pippingg-skills
 ```
 
 ## 技能列表
@@ -90,6 +91,45 @@
 ```bash
 /skill-iterator
 ```
+
+---
+
+### 3. recipe-generator（菜谱生成器）
+
+生成专业级详细菜谱，附带生图提示词和自动生成的菜谱海报。
+
+**核心功能：**
+
+- 检索权威来源（米其林指南、舌尖上的中国、专业大厨）
+- 生成精确配方（克、毫升等精确用量）
+- 创建多种风格的菜谱海报生图提示词
+- 自动使用 Gemini 生成菜谱海报图片
+
+**特色能力：**
+
+- **权威来源**：整合米其林、舌尖上的中国、高分菜谱
+- **精确用量**：告别"适量"、"少许"——精确到克和毫升
+- **大厨技巧**：真正实用的非显而易见的专业技巧
+- **自动生图**：自动生成精美的菜谱海报
+
+**风格选项：**
+
+| 风格 | 说明 |
+| ---- | ---- |
+| C（默认） | 现代写实风，教育感强 |
+| A | 传统海报风，视觉冲击强 |
+| B | 文人卷轴风，素雅内敛 |
+
+**使用方式：**
+
+```bash
+/recipe-generator 清蒸鱼
+/recipe-generator 红烧肉 plan A风格
+```
+
+**依赖：**
+
+- `baoyu-gemini-web` — 用于生成菜谱海报图片
 
 ## 为什么需要这些技能？
 
